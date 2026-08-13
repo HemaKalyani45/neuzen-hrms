@@ -2,13 +2,13 @@ import axios from 'axios';
 
 const api = axios.create({
  
-   baseURL:'http://localhost:5000/api/'
-   //   baseURL: "https://neuzen-hrms-vcav.vercel.app/api",
+  // baseURL:'http://localhost:5000/api/'
+      baseURL: "https://neuzen-hrms-vcav.vercel.app/api/",
 
   
-  // headers: {
-  //   'Content-Type': 'application/json'
-  // }
+   headers: {
+     'Content-Type': 'application/json'
+   }
 });
 
 api.interceptors.request.use((config) => {
