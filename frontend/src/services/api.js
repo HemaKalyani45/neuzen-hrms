@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
+  baseURL: 'https://neuzen-hrms-o1zj.vercel.app/',
   headers: {
     'Content-Type': 'application/json'
   }
