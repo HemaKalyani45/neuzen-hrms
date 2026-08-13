@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    const connStr = process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/neuzen_hrms';
+    const connStr = 'mongodb+srv://hemakalyani56_db_user:6zJ0hbsWm30eSyWG@cluster0.rtjneo7.mongodb.net/?appName=Cluster0';
     const conn = await mongoose.connect(connStr, {
       serverSelectionTimeoutMS: 3000 // Quick timeout if no local MongoDB service
     });
